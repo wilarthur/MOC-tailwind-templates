@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-moc-orange: #faa103;
+  --color-moc-blue: #01216a;
+  --color-moc-grey: #d3d5e0;
+  --color-moc-red: #e40146;
+  --color-moc-lightblue: #0072ce;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: unset !important;
+  color: #01216a !important;
+  background-color: #d3d5e0 !important;
+  padding: 10px;
+}
