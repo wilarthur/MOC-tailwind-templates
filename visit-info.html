@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum of Chelmsford | What's on</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="min-h-36">
+            <div class="container mx-auto">
+                <ul class="flex w-full justify-center md:justify-end mb-10 lg:mb-5">
+                    <li>
+                        <a class=" mx-3 bg-moc-orange p-5 pb-3 text-moc-blue rounded-b-lg font-bold hover:bg-moc-blue
+                                                                                hover:text-white align-middle"
+                            href="/">Make a
+                            donation</a>
+                    </li>
+                    <li>
+                        <a class=" mx-3 bg-moc-orange p-5 pb-3 text-moc-blue rounded-b-lg font-bold hover:bg-moc-blue
+                                                                                hover:text-white align-middle"
+                            href="/">Become a
+                            member</a>
+                    </li>
+                </ul>
+                <div class="flex flex-nowrap content-center justify-between pb-10">
+                    <a class="w-auto shrink-0 lg:order-first p-3 lg:p-0" href="/"><img src="/img/moc-logo.svg"
+                            alt="moc-logo"></a>
+                    <div class="flex flex-wrap justify-between lg:order-last">
+
+                        <div class="flex items-center">
+                            <ul class="hidden w-full justify-end my-5 text-xl lg:flex">
+                                <li class="mx-5 content-center text-moc-blue hover:underline"><a href="/">Your visit</a>
+                                </li>
+                                <li class="mx-5 content-center text-moc-blue hover:underline"><a
+                                        href="/events.html">What's on</a>
+                                </li>
+                                <li class="mx-5 content-center text-moc-blue hover:underline"><a href="/">Stories</a>
+                                </li>
+                                <li class="mx-5 content-center text-moc-blue hover:underline"><a href="/">Learn</a></li>
+                                <li class="mx-5 content-center text-moc-blue hover:underline"><a href="/">Support us</a>
+                                </li>
+                                <li class="mx-5 content-center text-moc-blue hover:underline"><a href="/">Venue hire</a>
+                                </li>
+                                <li class="mx-5 content-center text-moc-blue hover:underline"><a href="/">News</a></li>
+
+                            </ul>
+                            <button
+                                class="mx-2 lg:mx-5 bg-moc-orange text-moc-blue hover:bg-moc-blue hover:text-white hover:cursor-pointer p-2 rounded-full flex justify-center">
+                                <i class="bi bi-search flex justify-center items-center w-8 h-8"></i>
+                            </button>
+                            <button onclick="toggleMenu()" class="flex text-2xl mx-2 bg-moc-orange text-moc-blue hover:bg-moc-blue
+                                hover:text-white hover:cursor-pointer p-2 rounded-full lg:hidden justify-center">
+                                <i class="bi bi-list flex justify-center items-center w-8 h-8"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="bg-white/75 absolute top-0 right-0 transition duration-1000 translate-x-full">
+                <div class="flex h-screen">
+                    <div class="p-10 w-screen h-full flex flex-col items-end">
+                        <div class="h-1/2 py-5">
+                            <div class="flex h-1/3 w-96">
+                                <div class="bg-moc-lightblue rounded-tr-full w-full h-full"></div>
+                                <div class="bg-moc-lightblue rounded-tl-full w-full h-full"></div>
+                            </div>
+                            <div class=" bg-moc-lightblue w-96 h-2/3"></div>
+                        </div>
+                        <div class="bg-moc-red rounded-full h-96 w-96 py-5"></div>
+                    </div>
+                    <div class="flex items-center justify-end w-screen h-full">
+                        <div class="bg-moc-orange rounded-l-full md:max-w-1/2 lg:max-w-1/3 w-2/3 h-10/12 py-5">
+                            <button onclick="toggleMenu()"
+                                class="float-right text-3xl flex m-2 bg-white text-moc-blue hover:bg-moc-blue
+                                                        hover:text-white hover:cursor-pointer p-2 rounded-full justify-center"><i
+                                    class="bi bi-x flex justify-center items-center w-8 h-8"></i>
+                            </button>
+                            <ul class="w-full justify-end my-5 text-xl flex flex-col text-right">
+                                <li class="m-5 content-center text-moc-blue"><a class="hover:underline" href="/">Your
+                                        visit</a>
+                                </li>
+                                <li class="m-5 content-center text-moc-blue"><a class="hover:underline"
+                                        href="/events.html">
+                                        What's
+                                        on</a>
+                                </li>
+                                <li class="m-5 content-center text-moc-blue"><a class="hover:underline"
+                                        href="/">Stories</a>
+                                </li>
+                                <li class="m-5 content-center text-moc-blue"><a class="hover:underline"
+                                        href="/">Learn</a>
+                                </li>
+                                <li class="m-5 content-center text-moc-blue"><a class="hover:underline" href="/">Support
+                                        us</a>
+                                </li>
+                                <li class="m-5 content-center text-moc-blue"><a class="hover:underline" href="/">Venue
+                                        hire</a>
+                                </li>
+                                <li class="m-5 content-center text-moc-blue"><a class="hover:underline"
+                                        href="/">News</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="bg-moc-grey absolute w-full p-40 -z-10"></div>
+        <div class="container mx-auto mb-20 z-10 px-5 lg:px-0">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-2">
+                    <ul class="flex pt-5 font-semibold my-5">
+                        <li class="text-moc-blue mx-2"><a class="hover:underline" href="/">Home</a></li>
+                        <li class="text-moc-orange mx-2"><i class="bi bi-chevron-right"></i></li>
+                        <li class="text-moc-blue mx-2">Visit</li>
+                        <li class="text-moc-orange mx-2"><i class="bi bi-chevron-right"></i></li>
+                        <li class="text-moc-blue mx-2">Museum of Chelmsford</li>
+                    </ul>
+                    <h1 class="text-moc-blue text-5xl font-semibold my-14">Museum of Chelmsford</h1>
+
+                    <div class="mt-44">
+                        <p class="text-moc-blue mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                            illo
+                            eos
+                            dicta ab dolorem quo
+                            dignissimos ex consequuntur, hic dolores accusantium omnis natus obcaecati minus cumque?
+                            Minus
+                            dolore sequi magnam?</p>
+                        <p class="text-moc-blue mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                            illo
+                            eos
+                            dicta ab dolorem quo
+                            dignissimos ex consequuntur, hic dolores accusantium omnis natus obcaecati minus cumque?
+                            Minus
+                            dolore sequi magnam?</p>
+                        <p class="text-moc-blue mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                            illo
+                            eos
+                            dicta ab dolorem quo
+                            dignissimos ex consequuntur, hic dolores accusantium omnis natus obcaecati minus cumque?
+                            Minus
+                            dolore sequi magnam?</p>
+                        <p class="text-moc-blue mb-5 italic font-semibold">"Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nisi,
+                            illo
+                            eos
+                            dicta ab dolorem quo
+                            dignissimos ex consequuntur, hic dolores accusantium omnis natus obcaecati minus cumque?
+                            Minus
+                            dolore sequi magnam?"</p>
+                        <p class="text-moc-blue mb-5"><a class="underline font-semibold" href="/">Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit</a>. Nisi, illo
+                            eos
+                            dicta ab dolorem quo
+                            dignissimos ex consequuntur, hic dolores accusantium omnis natus obcaecati minus cumque?
+                            Minus</p>
+                        <div class="flex items-center justify-around">
+                            <!-- Slider main container -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper container my-10">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                                        </div>
+                                        <div class="">
+                                            <p class="text-md text-moc-blue my-3">Image caption</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                                        </div>
+                                        <div class="">
+                                            <p class="text-md text-moc-blue my-3">Image caption</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                                        </div>
+                                        <div class="">
+                                            <p class="text-md text-moc-blue my-3">Image caption</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                                        </div>
+                                        <div class="">
+                                            <p class="text-md text-moc-blue my-3">Image caption</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                                        </div>
+                                        <div class="">
+                                            <p class="text-md text-moc-blue my-3">Image caption</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                                        </div>
+                                        <div class="">
+                                            <p class="text-md text-moc-blue my-3">Image caption</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- If we need pagination -->
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+                        <h2 class="text-3xl font-semibold mb-5 text-moc-blue">Find the Museum of Chelmsford</h2>
+                    </div>
+                </div>
+                <div class="lg:col-span-1">
+                    <img class="my-10 hidden lg:block" src="https://blocks.astratic.com/img/general-img-square.png"
+                        alt="">
+                    <div class="bg-moc-blue p-10 rounded-4xl text-white">
+                        <h2 class="text-2xl font-semibold mb-5">Opening hours</h2>
+                        <p class="mb-5">November to March:
+                            10am to 4pm daily
+                            Last entry 3pm</p>
+
+                        <p class="mb-5">April to October:
+                            10am to 5pm daily
+                            Last entry 4pm</p>
+
+                        <h2 class="text-2xl font-semibold mb-5">Bank holidays</h2>
+                        <p class="mb-5">We are open on bank holidays. We are closed Christmas Day, Boxing Day and New
+                            Year Day.</p>
+
+                        <h2 class="text-2xl font-semibold mb-5">Price</h2>
+                        <p class="mb-5">Entry is £4 for adults. Children, young people and carers are free.</p>
+
+                        <a href="/">
+                            <h2 class="text-2xl font-semibold mb-5 underline">Memberships</h2>
+                        </a>
+                        <p class="mb-5">£20 per year single<br>
+                            £30 per year joint</p>
+
+                        <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue text-lg font-semibold hover:bg-white"
+                            href="/">CTA
+                            <i class="bi bi-chevron-right"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div>
+            <div class="flex">
+                <div class="bg-moc-orange h-20 w-1/2 rounded-tr-4xl"></div>
+                <div class="bg-moc-orange h-20 w-1/2 rounded-tl-4xl"></div>
+            </div>
+            <div class="bg-moc-orange">
+                <div class="container mx-auto flex flex-wrap items-center py-10 pt-0">
+                    <div class="w-full lg:w-1/2 p-10">
+                        <h2 class="text-3xl text-moc-blue my-3 font-bold">Join the hive</h2>
+                        <p class="text-moc-blue">Lorem ipsum dolor sit amet consectetur adipisiceeing elit. Reiciendis
+                            minus
+                            dignissimos dolores
+                            repellendus nesciunt ut impedit cumque non beatae sed eum, unde adipisci a, corporis
+                            pariatur,
+                            sit voluptatum labore est.</p>
+                        <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-white text-moc-blue text-lg" href="/">Become
+                            a
+                            member
+                            <i class="bi bi-chevron-right"></i></a>
+
+                    </div>
+                    <div class="w-full lg:w-1/2 p-10 flex justify-center"><img
+                            class="max-h-96 max-w-96 w-full h-full rounded-full"
+                            src="https://www.frontiersin.org/_rtmag/_next/image?url=https%3A%2F%2Fwww.frontiersin.org%2Fimage%2Fresearchtopic%2F20355&w=1920&q=90"
+                            alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-10 flex justify-between px-5 lg:px-0">
+            <p class="inline-block text-moc-blue content-center font-semibold">Last updated: 01 January 2345</p>
+            <a class="inline-block my-5 p-2 px-8 text-moc-blue text-lg font-semibold" href="/">Back to top
+                <i class="bi bi-arrow-up"></i></a>
+        </div>
+    </main>
+
+    <footer class="bg-moc-blue py-20">
+        <div class="container flex flex-wrap mx-auto">
+            <div class="w-full lg:w-1/3 p-5"><a href="/"><img class="mb-10" src="/img/moc-logo-white-text.svg"
+                        alt=""></a>
+                <p class="text-lg text-white my-1">T: <a class="underline" href="tel+01234567890">01234 567890</a></p>
+                <p class="text-lg text-white my-1 mb-5">E: <a class="underline"
+                        href="mailto:info@museumofchelmsford.gov.uk">info@museumofchelmsford.gov.uk</a></p>
+                <p class="text-lg text-white my-3 mb-5">Oaklands Park, Moulsham Street, <br> Chelmsford, CM2 9QA</p>
+                <div class="flex">
+                    <a class="mr-3 text-moc-orange text-3xl" href="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a class="mr-3 text-moc-orange text-3xl" href="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a class="mr-3 text-moc-orange text-3xl" href="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a class="mr-3 text-moc-orange text-3xl" href="X"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 p-5">
+                <ul>
+                    <li class="mb-8 text-white"><a class="underline" href="/">Opening times</a></li>
+                    <li class="mb-8 text-white"><a class="underline" href="/">Accessibility statement</a></li>
+                    <li class="mb-8 text-white"><a class="underline" href="/">Disclaimer</a></li>
+                    <li class="mb-8 text-white"><a class="underline" href="/">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="w-full lg:w-1/3 p-5">
+                <h6 class="text-2xl text-white mb-5 font-bold">Don't miss out!</h6>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla animi praesentium
+                    assumenda eius
+                    delectus, natus quidem, odit quod soluta est, ullam a? Ipsa incidunt recusandae nobis. Quasi
+                    reprehenderit similique vel.</p>
+                <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue text-lg" href="/">Join our
+                    mailing list
+                    <i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/dist/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
