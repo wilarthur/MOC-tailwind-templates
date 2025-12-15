@@ -1,5 +1,40 @@
 @import "tailwindcss";
 
+.accordion {
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion.active > .bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active {
+  background-color: #faa103;
+  color: #01216a;
+}
+
+/* .accordion:hover {
+  background-color: ;
+  color: ;
+} */
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion-panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 @theme {
   --color-moc-orange: #faa103;
   --color-moc-blue: #01216a;
