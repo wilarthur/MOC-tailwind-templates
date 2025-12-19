@@ -10,6 +10,7 @@ function toggleMenu() {
 function toggleSearch() {
   const searchContainer = document.getElementById("search-container");
   searchContainer.classList.toggle("hidden");
+  searchContainer.classList.toggle("block");
 }
 
 /* Accordions */
