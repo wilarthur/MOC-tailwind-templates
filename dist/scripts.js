@@ -9,8 +9,23 @@ function toggleMenu() {
 
 function toggleSearch() {
   const searchContainer = document.getElementById("search-container");
-  searchContainer.classList.toggle("hidden");
-  searchContainer.classList.toggle("block");
+  const searchForm = document.getElementById("search-form");
+
+  if (searchContainer.classList.contains("h-0")) {
+    searchContainer.classList.toggle("h-0");
+    searchContainer.classList.toggle("h-32");
+    setTimeout(() => {
+      searchForm.classList.toggle("opacity-0");
+      searchForm.classList.toggle("opacity-100");
+    }, 300);
+  } else if (searchContainer.classList.contains("h-32")) {
+    searchForm.classList.toggle("opacity-0");
+    searchForm.classList.toggle("opacity-100");
+    setTimeout(() => {
+      searchContainer.classList.toggle("h-0");
+      searchContainer.classList.toggle("h-32");
+    }, 300);
+  }
 }
 
 /* Accordions */
