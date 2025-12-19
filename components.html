@@ -53,7 +53,7 @@
                                 <li class="mx-5 content-center text-moc-blue hover:underline"><a href="/">News</a></li>
 
                             </ul>
-                            <button
+                            <button onclick="toggleSearch()"
                                 class="mx-2 lg:mx-5 bg-moc-orange text-moc-blue hover:bg-moc-blue hover:text-white hover:cursor-pointer p-2 rounded-full flex justify-center">
                                 <i class="bi bi-search flex justify-center items-center w-8 h-8"></i>
                             </button>
@@ -64,6 +64,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="search-container" class="bg-moc-orange hidden">
+                <form class="container mx-auto flex py-10" action="">
+                    <input class="w-full bg-white px-5" type="search" name="search" id="search">
+                    <button type="submit"
+                        class="mx-2 lg:mx-5 bg-moc-blue text-white hover:bg-white hover:text-moc-blue hover:cursor-pointer p-2 rounded-full flex justify-center">
+                        <i class="bi bi-search flex justify-center items-center w-8 h-8"></i></button>
+                </form>
             </div>
             <div id="mobile-menu" class="bg-white/75 absolute top-0 right-0 transition duration-1000 translate-x-full">
                 <div class="flex h-screen">

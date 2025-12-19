@@ -7,6 +7,11 @@ function toggleMenu() {
   htmlTag.classList.toggle("overflow-hidden");
 }
 
+function toggleSearch() {
+  const searchContainer = document.getElementById("search-container");
+  searchContainer.classList.toggle("hidden");
+}
+
 /* Accordions */
 
 var acc = document.getElementsByClassName("accordion");
