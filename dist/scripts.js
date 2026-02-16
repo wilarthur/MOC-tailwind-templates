@@ -12,8 +12,11 @@ function toggleSearch() {
   const searchForm = document.getElementById("search-form");
 
   if (searchContainer.classList.contains("h-0")) {
-    searchContainer.classList.toggle("h-0");
-    searchContainer.classList.toggle("h-32");
+    searchContainer.classList.toggle("hidden");
+    setTimeout(() => {
+      searchContainer.classList.toggle("h-0");
+      searchContainer.classList.toggle("h-32");
+    }, 10);
     setTimeout(() => {
       searchForm.classList.toggle("opacity-0");
       searchForm.classList.toggle("opacity-100");
@@ -25,6 +28,9 @@ function toggleSearch() {
       searchContainer.classList.toggle("h-0");
       searchContainer.classList.toggle("h-32");
     }, 300);
+    setTimeout(() => {
+      searchContainer.classList.toggle("hidden");
+    }, 600);
   }
 }
 
