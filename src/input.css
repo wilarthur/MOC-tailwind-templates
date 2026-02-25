@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* Set global fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+p,
+span,
+a,
+li {
+  font-family: var(--font-body);
+}
+
 /* Accordions */
 .accordion {
   cursor: pointer;
@@ -53,6 +70,8 @@ select {
   --color-moc-grey: #d3d5e0;
   --color-moc-red: #e40146;
   --color-moc-lightblue: #0072ce;
+  --font-heading: "dunbar-tall", "Open Sans", sans-serif;
+  --font-body: "dunbar-text", "Open Sans", sans-serif;
 }
 
 .swiper-button-next,
@@ -62,7 +81,3 @@ select {
   background-color: #d3d5e0 !important;
   padding: 10px;
 }
-
-/* @utility container {
-  padding-inline: 1rem;
-} */
