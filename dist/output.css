@@ -408,23 +408,11 @@
     --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .cursor-auto {
-    cursor: auto;
-  }
-  .cursor-default {
-    cursor: default;
-  }
-  .cursor-none {
-    cursor: none;
-  }
   .cursor-not-allowed {
     cursor: not-allowed;
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .cursor-text {
-    cursor: text;
   }
   .appearance-none {
     appearance: none;
