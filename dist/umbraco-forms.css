@@ -1,9 +1,5 @@
 /* All forms must be wrapped in <div class="container mx-auto"></div> */
 
-form {
-  padding: 10vh 10vw;
-}
-
 form h1,
 form h2,
 form h3,
@@ -20,7 +16,7 @@ form h4 {
 
 form legend,
 .umbraco-forms-label {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 
 form label {
@@ -35,6 +31,11 @@ form label {
   margin-top: 1vh;
   display: flex;
   align-items: center;
+}
+
+.checkboxlist,
+.radiobuttonlist {
+  padding: 0px !important;
 }
 
 .umbraco-forms-form input.text,
@@ -75,10 +76,11 @@ textarea {
   padding: 0 25px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  width: 24px;
-  height: 24px;
+.umbraco-forms-form .checkboxlist input,
+.umbraco-forms-form .radiobuttonlist input,
+.umbraco-forms-form .checkbox input {
+  width: 24px !important;
+  height: 24px !important;
   margin-bottom: 0;
   margin-right: 20px;
 }
@@ -113,13 +115,13 @@ input[type="file"] {
 .btn.primary {
   background-color: var(--customyellow);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   background-color: #faa103;
   color: #01216a;
+  border-radius: 2rem;
   transition: ease-in-out 0.3s;
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .next:hover,
