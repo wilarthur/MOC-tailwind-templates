@@ -46,8 +46,8 @@ li {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion.active {
-  background-color: #faa103;
-  color: #01216a;
+  background-color: #01216a;
+  color: white;
 }
 
 /* .accordion:hover {
