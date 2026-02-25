@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-moc-orange: #faa103;
+  --color-moc-blue: #01216a;
+  --color-moc-grey: #d3d5e0;
+  --color-moc-red: #e40146;
+  --color-moc-lightblue: #0072ce;
+  --font-heading: "dunbar-tall", "Open Sans", sans-serif;
+  --font-body: "dunbar-text", "Open Sans", sans-serif;
+}
+
 /* Set global fonts */
 h1,
 h2,
@@ -62,16 +72,6 @@ select {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 50%;
-}
-
-@theme {
-  --color-moc-orange: #faa103;
-  --color-moc-blue: #01216a;
-  --color-moc-grey: #d3d5e0;
-  --color-moc-red: #e40146;
-  --color-moc-lightblue: #0072ce;
-  --font-heading: "dunbar-tall", "Open Sans", sans-serif;
-  --font-body: "dunbar-text", "Open Sans", sans-serif;
 }
 
 .swiper-button-next,
