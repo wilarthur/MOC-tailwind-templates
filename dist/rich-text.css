@@ -90,3 +90,12 @@
 .bg-moc-blue ol {
   color: white;
 }
+
+/* Stop text underline on rich text buttons */
+.rich-text a.no-underline {
+  text-decoration: none;
+}
+
+.rich-text a.no-underline:hover {
+  color: white;
+}
