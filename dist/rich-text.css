@@ -103,3 +103,10 @@
 .rich-text a.no-underline:hover {
   color: white;
 }
+
+/* Padding on mobile */
+@media (max-width: 767px) {
+  .rich-text {
+    padding: 0 15px;
+  }
+}
