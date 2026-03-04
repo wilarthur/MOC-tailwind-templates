@@ -75,3 +75,18 @@
 .rich-text p.italic {
   font-style: italic;
 }
+
+/* Change colours on blue bg */
+
+.bg-moc-blue a,
+.bg-moc-blue p,
+.bg-moc-blue h1,
+.bg-moc-blue h2,
+.bg-moc-blue h3,
+.bg-moc-blue h4,
+.bg-moc-blue h5,
+.bg-moc-blue h6,
+.bg-moc-blue ul,
+.bg-moc-blue ol {
+  color: white;
+}
