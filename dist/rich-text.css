@@ -91,6 +91,10 @@
   color: white;
 }
 
+.bg-moc-blue a.bg-moc-orange {
+  color: #01216a;
+}
+
 /* Stop text underline on rich text buttons */
 .rich-text a.no-underline {
   text-decoration: none;

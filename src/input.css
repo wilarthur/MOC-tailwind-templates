@@ -74,9 +74,11 @@ select {
   background-position-y: 50%;
 }
 
+/* Swiper buttons */
+
 .swiper-button-next,
 .swiper-button-prev {
-  position: unset !important;
+  /* position: unset !important; */
   color: #01216a !important;
   background-color: #d3d5e0 !important;
   padding: 10px;

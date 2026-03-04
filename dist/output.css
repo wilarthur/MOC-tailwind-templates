@@ -963,7 +963,6 @@ select {
   background-position-y: 50%;
 }
 .swiper-button-next, .swiper-button-prev {
-  position: unset !important;
   color: #01216a !important;
   background-color: #d3d5e0 !important;
   padding: 10px;
