@@ -26,17 +26,19 @@
             margin-right: auto;
         }
 
-
         .swiper-slide-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             padding: 50px;
             height: 100%;
         }
 
-        .swiper-slide-content img {
+        .imageSwiper .swiper-slide-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .imageSwiper .swiper-slide-content img {
             display: block;
             width: 100%;
             height: 100%;
@@ -48,89 +50,95 @@
 <body>
     <!-- Swiper -->
     <div class="container mx-auto">
-        <h2 class="inline-block my-5 text-4xl text-moc-blue content-center font-bold">Image carousel heading</h2>
-        <div class="swiper mySwiper !h-96">
+        <h2 class="inline-block my-5 text-4xl text-moc-blue content-center font-bold">Carousel heading</h2>
+        <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span>Image caption</span>
+                    <div class="swiper-slide-content">
+                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-2xl text-moc-blue my-3 font-bold">Heading</h3>
+                            <p class="text-moc-blue">Rich text here</p>
+                            <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue transition duration-200 hover:bg-moc-blue hover:text-white text-lg"
+                                href="/">View (optional)<i class="bi bi-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span>Image
-                            caption</span></div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span>Image
-                            caption</span>
+                    <div class="swiper-slide-content">
+                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-2xl text-moc-blue my-3 font-bold">Heading</h3>
+                            <p class="text-moc-blue">Rich text here</p>
+                            <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue transition duration-200 hover:bg-moc-blue hover:text-white text-lg"
+                                href="/">View (optional)<i class="bi bi-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span>Image
-                            caption</span></div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span>Image
-                            caption</span>
+                    <div class="swiper-slide-content">
+                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-2xl text-moc-blue my-3 font-bold">Heading</h3>
+                            <p class="text-moc-blue">Rich text here</p>
+                            <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue transition duration-200 hover:bg-moc-blue hover:text-white text-lg"
+                                href="/">View (optional)<i class="bi bi-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span>Image
-                            caption</span></div>
+                    <div class="swiper-slide-content">
+                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-2xl text-moc-blue my-3 font-bold">Heading</h3>
+                            <p class="text-moc-blue">Rich text here</p>
+                            <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue transition duration-200 hover:bg-moc-blue hover:text-white text-lg"
+                                href="/">View (optional)<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-slide my-auto mx-auto">
+                    <div class="swiper-slide-content">
+                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-2xl text-moc-blue my-3 font-bold">Heading</h3>
+                            <p class="text-moc-blue">Rich text here</p>
+                            <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue transition duration-200 hover:bg-moc-blue hover:text-white text-lg"
+                                href="/">View (optional)<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide my-auto mx-auto">
+                    <div class="swiper-slide-content">
+                        <div class="w-full h-80 rounded-3xl bg-no-repeat bg-cover bg-center"
+                            style="background-image:url('https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg');">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-2xl text-moc-blue my-3 font-bold">Heading</h3>
+                            <p class="text-moc-blue">Rich text here</p>
+                            <a class="inline-block my-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue transition duration-200 hover:bg-moc-blue hover:text-white text-lg"
+                                href="/">View (optional)<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <div class="container mx-auto">
-        <h2 class="inline-block my-5 text-4xl text-moc-blue content-center font-bold">Image carousel heading</h2>
-        <div class="swiper !h-96">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span>Image caption</span>
-                    </div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span>Image
-                            caption</span></div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span>Image
-                            caption</span>
-                    </div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span>Image
-                            caption</span></div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span>Image
-                            caption</span>
-                    </div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span>Image
-                            caption</span></div>
-                </div>
 
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -151,15 +159,12 @@
             breakpoints: {
                 640: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
                 },
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 40,
                 },
                 1024: {
                     slidesPerView: 3,
-                    spaceBetween: 50,
                 },
             },
         });
