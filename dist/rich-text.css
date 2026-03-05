@@ -76,6 +76,14 @@
   font-style: italic;
 }
 
+.rich-text .quote {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 20px;
+  color: #01216a;
+  border-left: 4px solid #e40146;
+}
+
 /* Change colours on blue bg */
 
 .bg-moc-blue a,
