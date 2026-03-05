@@ -109,3 +109,21 @@ select {
   height: 100%;
   object-fit: contain;
 }
+
+/* Cludo */
+.search-results-item a,
+.facet-list-item a {
+  text-decoration: underline;
+  color: #01216a;
+  transition: ease-in-out 0.2s;
+}
+
+.facet-list-item.active a {
+  color: #0072ce;
+  font-weight: bold;
+}
+
+.search-results-item a:hover,
+.facet-list-item a:hover {
+  color: #faa103;
+}
