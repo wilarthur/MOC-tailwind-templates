@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/dyr8uak.css">
+    <link rel="stylesheet" href="dist/glightbox.min.css" />
+    <script src="dist/glightbox.min.js"></script>
 </head>
 
 <body>
@@ -106,48 +108,66 @@
 
     <!-- Image carousel -->
     <!-- NOTE: Image carousels have a fixed height to prevent portrait images being too large. This is in the tag with the imageSwiper class-->
+
     <div class="container mx-auto">
         <h2 class="inline-block my-5 text-4xl text-moc-blue content-center font-bold">Image carousel heading</h2>
         <div class="swiper imageSwiper !h-96">
             <div class="swiper-wrapper">
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span
+                    <div class="swiper-slide-content"><a
+                            href="https://www.authentic-europe.com/travel-tips/8-reasons-to-visit-scotland/_/image/e9fe5c75-dcdd-45e5-aec1-8a52a5ecce6e:6af20909942d7c852c5f760cacf0a412ea834a37/width-768/Old%20Man%20of%20Storr%20Photo%20©%20Casperry%20via%20canva.com.jpg"
+                            class="glightbox h-full" data-glightbox="description: image caption"><img
+                                src="https://www.authentic-europe.com/travel-tips/8-reasons-to-visit-scotland/_/image/e9fe5c75-dcdd-45e5-aec1-8a52a5ecce6e:6af20909942d7c852c5f760cacf0a412ea834a37/width-768/Old%20Man%20of%20Storr%20Photo%20©%20Casperry%20via%20canva.com.jpg"></a><span
                             class="text-moc-blue">Image caption</span>
                     </div>
                 </div>
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span
-                            class="text-moc-blue">Image
-                            caption</span></div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span
-                            class="text-moc-blue">Image
-                            caption</span>
+                    <div class="swiper-slide-content"><a
+                            href="https://handluggageonly.co.uk/wp-content/uploads/2017/04/HandLuggageOnly-9-1.jpg"
+                            class="glightbox h-full" data-glightbox="description: image caption"><img
+                                src="https://handluggageonly.co.uk/wp-content/uploads/2017/04/HandLuggageOnly-9-1.jpg"></a><span
+                            class="text-moc-blue">Image caption</span>
                     </div>
                 </div>
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span
-                            class="text-moc-blue">Image
-                            caption</span></div>
-                </div>
-                <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://blocks.astratic.com/img/general-img-landscape.png"><span
-                            class="text-moc-blue">Image
-                            caption</span>
+                    <div class="swiper-slide-content"><a
+                            href="https://adeotravel.com/wp-content/uploads/2018/12/N-Scotland-Portree-870x480.jpg"
+                            class="glightbox h-full" data-glightbox="description: image caption"><img
+                                src="https://adeotravel.com/wp-content/uploads/2018/12/N-Scotland-Portree-870x480.jpg"></a><span
+                            class="text-moc-blue">Image caption</span>
                     </div>
                 </div>
                 <div class="swiper-slide my-auto mx-auto">
-                    <div class="swiper-slide-content"><img
-                            src="https://donaldthompson.com/wp-content/uploads/2024/10/placeholder-image-vertical.png"><span
-                            class="text-moc-blue">Image
-                            caption</span></div>
+                    <div class="swiper-slide-content"><a
+                            href="https://www.originaltravel.co.uk/img/v2/export/mag/the-best-islands-to-visit-in-scotland.webp"
+                            class="glightbox h-full" data-glightbox="description: image caption"><img
+                                src="https://www.originaltravel.co.uk/img/v2/export/mag/the-best-islands-to-visit-in-scotland.webp"></a><span
+                            class="text-moc-blue">Image caption</span>
+                    </div>
                 </div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto">
+        <h2 class="inline-block my-5 text-4xl text-moc-blue content-center font-bold">Image carousel heading</h2>
+        <div class="swiper imageSwiper !h-96">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide my-auto mx-auto">
+                    <div class="swiper-slide-content"><a
+                            href="https://southcoastimprovement.com/wp-content/uploads/2025/03/8254661.jpg"
+                            class="glightbox h-full" data-glightbox="description: image caption"><img
+                                src="https://southcoastimprovement.com/wp-content/uploads/2025/03/8254661.jpg"></a><span
+                            class="text-moc-blue">Image caption</span>
+                    </div>
+                </div>
+
+
 
             </div>
             <div class="swiper-button-next"></div>
@@ -337,6 +357,13 @@
                     slidesPerView: 3,
                 },
             },
+        });
+    </script>
+    <!-- Glightbox script-->
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
         });
     </script>
 </body>
