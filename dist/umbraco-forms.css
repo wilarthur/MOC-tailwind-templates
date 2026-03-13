@@ -6,7 +6,20 @@ form h3,
 form h4,
 form h5,
 form h6 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  color: #01216a;
+  font-family: "dunbar-tall", "Open Sans", sans-serif;
+}
+
+main > h2 {
+  font-size: 2.5em;
+  color: #01216a;
+  font-family: "dunbar-tall", "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.umbraco-forms-caption {
+  font-weight: unset;
 }
 
 form h4 {
@@ -16,13 +29,19 @@ form h4 {
 
 form legend,
 .umbraco-forms-label {
-  font-size: 1.6rem !important;
+  font-size: 1.2em !important;
+  font-family: "dunbar-text", "Open Sans", sans-serif;
+  color: #01216a;
+  font-weight: normal !important;
 }
 
 form label {
   display: block;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1em;
+  font-family: "dunbar-text", "Open Sans", sans-serif;
+  color: #01216a;
+  font-weight: normal !important;
+  margin-bottom: 0;
 }
 
 .umbraco-forms-field-wrapper,
@@ -45,14 +64,16 @@ form label {
 }
 
 .text,
+.datepickerfield,
 select {
   width: 100%;
   max-width: 800px;
   height: 2rem;
-  font-size: 1rem;
-  border: 1px solid gray;
-  padding: 0 25px;
+  font-size: 1em;
+  border: 1px solid #01216a !important;
+  padding: 20px 5px !important;
   background-color: white;
+  border-radius: 5px;
 }
 
 select {
@@ -64,14 +85,15 @@ textarea {
   width: 100%;
   max-width: 800px;
   height: 5rem;
-  font-size: 1rem;
-  border: 1px solid gray;
+  font-size: 1em;
+  border: 1px solid #01216a !important;
   padding: 10px 25px;
+  border-radius: 5px;
 }
 
 .datepickerfield {
   height: 2rem;
-  font-size: 1rem;
+  font-size: 1em;
   border: 1px solid gray;
   padding: 0 25px;
 }
@@ -86,7 +108,7 @@ textarea {
 }
 
 input[type="file"] {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .umbraco-forms-hidden {
@@ -94,7 +116,7 @@ input[type="file"] {
 }
 
 .umbraco-forms-field {
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .umbraco-forms-field-wrapper label {
@@ -102,16 +124,17 @@ input[type="file"] {
 }
 
 .umbraco-forms-field-wrapper div h2 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .umbraco-forms-field-wrapper div p {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   line-height: 1.4;
   margin-bottom: 1rem;
 }
 
 .next,
+.prev,
 .btn.primary {
   background-color: var(--customyellow);
   border: none;
@@ -121,14 +144,20 @@ input[type="file"] {
   border-radius: 2rem;
   transition: ease-in-out 0.3s;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .next:hover,
 .next:focus,
+.prev:hover,
+.prev:focus,
 .btn.primary:hover,
 .btn.primary:focus {
   background-color: #01216a;
   color: white;
   cursor: pointer;
+}
+
+.umbraco-forms-submitmessage {
+  padding: 2rem 0;
 }
