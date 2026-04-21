@@ -1,5 +1,9 @@
 /*CSS for RTE editor*/
 
+.rich-text {
+  color: #01216a;
+}
+
 .rich-text p {
   margin: 20px 0;
 }
