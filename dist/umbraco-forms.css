@@ -152,6 +152,88 @@ input[type="file"]::file-selector-button:focus {
   margin-bottom: 1rem;
 }
 
+.umbraco-forms-field.richtext {
+  color: #01216a;
+}
+
+/*CSS for RTE editor*/
+
+.umbraco-forms-field.richtext p {
+  margin: 20px 0;
+}
+
+.umbraco-forms-field.richtext h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 28px 0;
+  color: #01216a;
+}
+
+.umbraco-forms-field.richtext h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+  margin: 28px 0;
+  color: #01216a;
+}
+
+.umbraco-forms-field.richtext h3 {
+  font-size: 1.875em;
+  font-weight: 600;
+  margin: 28px 0;
+  color: #01216a;
+}
+
+.umbraco-forms-field.richtext h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 28px 0;
+  color: #01216a;
+}
+
+.umbraco-forms-field.richtext h5 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 28px 0;
+  color: #01216a;
+}
+
+.umbraco-forms-field.richtext h6 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin: 28px 0;
+  color: #01216a;
+}
+
+.umbraco-forms-field.richtext a {
+  color: #01216a;
+  text-decoration: underline;
+}
+
+.umbraco-forms-field.richtext a:hover {
+  color: #faa103;
+  text-decoration: underline;
+}
+
+.umbraco-forms-field.richtext ul {
+  list-style-type: disc;
+  margin: 20px 0;
+  margin-left: 20px;
+}
+
+.umbraco-forms-field.richtext ol {
+  list-style-type: decimal;
+  margin: 20px 0;
+  margin-left: 20px;
+}
+
+.umbraco-forms-field.richtext strong {
+  font-weight: bold;
+}
+
+.umbraco-forms-field.richtext p.italic {
+  font-style: italic;
+}
+
 .next,
 .prev,
 .btn.primary {
