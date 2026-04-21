@@ -111,6 +111,25 @@ input[type="file"] {
   font-size: 1em;
 }
 
+input[type="file"]::file-selector-button {
+  background-color: var(--customyellow);
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #faa103;
+  color: #01216a;
+  border-radius: 2rem;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+input[type="file"]::file-selector-button:hover,
+input[type="file"]::file-selector-button:focus {
+  background-color: #01216a;
+  color: white;
+  cursor: pointer;
+}
+
 .umbraco-forms-hidden {
   display: none;
 }
