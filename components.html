@@ -963,22 +963,24 @@
         <hr>
         <p class="text-5xl my-10">Events filter</p>
         <hr>
-        <div class="container mx-auto my-10 flex flex-wrap justify-between items-center px-5 lg:px-0">
-            <input class="border-moc-blue h-fit w-full lg:w-1/4 mb-5 border-2 px-3 py-3 rounded-lg " type="date"
+        <div class="container mx-auto my-10 grid grid-cols-10 gap-5 px-5 lg:px-0">
+            <input class="col-span-5 xl:col-span-3 border-moc-blue mb-5 border-2 px-3 py-3 rounded-lg" type="date"
                 id="eventDates" name="eventDates">
-            <select class="border-moc-blue h-fit w-full lg:w-1/4 mb-5 border-2 px-3 py-3 rounded-lg appearance-none"
+            <select class="col-span-5 xl:col-span-3 border-moc-blue mb-5 border-2 px-3 py-3 rounded-lg appearance-none"
                 name="venues" id="venues">
+                <option value="" disabled selected>Select a venue</option>
                 <option value="venue1">Venue 1</option>
                 <option value="venue2">Venue 2</option>
                 <option value="venue3">Venue 3</option>
             </select>
-            <select class="border-moc-blue h-fit w-full lg:w-1/4 mb-5 border-2 px-3 py-3 rounded-lg appearance-none"
+            <select class="col-span-5 xl:col-span-3 border-moc-blue mb-5 border-2 px-3 py-3 rounded-lg appearance-none"
                 name="eventType" id="eventType">
+                <option value="" disabled selected>Select an event type</option>
                 <option value="type1">Type 1</option>
                 <option value="type2">Type 2</option>
                 <option value="type3">Type 3</option>
             </select>
-            <a class="inline-flex mb-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue text-lg transition duration-200 hover:bg-moc-blue hover:text-white"
+            <a class="col-span-5 xl:col-span-1 inline-flex items-center mb-5 p-2 px-8 rounded-4xl bg-moc-orange text-moc-blue text-lg transition duration-200 hover:bg-moc-blue hover:text-white"
                 href="/"><span>Search</span>
                 <i class="bi bi-chevron-right"></i></a>
         </div>
