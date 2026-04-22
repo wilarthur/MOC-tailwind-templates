@@ -44,6 +44,11 @@ form label {
   margin-bottom: 0;
 }
 
+.umbraco-forms-form input.text,
+.umbraco-forms-form textarea {
+  max-width: 700px !important;
+}
+
 .umbraco-forms-field-wrapper,
 .checkboxlist-vertical div,
 .radiobuttonlist-vertical div {
