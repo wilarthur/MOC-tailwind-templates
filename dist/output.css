@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -559,6 +560,9 @@
   .bg-moc-red {
     background-color: var(--color-moc-red);
   }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -642,6 +646,15 @@
   }
   .pt-72 {
     padding-top: calc(var(--spacing) * 72);
+  }
+  .pr-20 {
+    padding-right: calc(var(--spacing) * 20);
+  }
+  .pr-40 {
+    padding-right: calc(var(--spacing) * 40);
+  }
+  .pr-96 {
+    padding-right: calc(var(--spacing) * 96);
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
@@ -821,6 +834,11 @@
       justify-content: flex-end;
     }
   }
+  .md\:pr-96 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 96);
+    }
+  }
   .lg\:order-1 {
     @media (width >= 64rem) {
       order: 1;
@@ -949,6 +967,11 @@
   .lg\:px-0 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:pr-96 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 96);
     }
   }
   .xl\:grid-cols-4 {
