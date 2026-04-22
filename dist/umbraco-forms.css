@@ -1,4 +1,7 @@
 /* All forms must be wrapped in <div class="container mx-auto"></div> */
+.umbraco-forms-page {
+  padding: 1em;
+}
 
 form h1,
 form h2,
