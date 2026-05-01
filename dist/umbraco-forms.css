@@ -213,8 +213,8 @@ input[type="file"]::file-selector-button:focus {
 }
 
 .umbraco-forms-field.richtext a {
-  color: #01216a;
-  text-decoration: underline;
+  color: #01216a !important;
+  text-decoration: underline !important;
 }
 
 .umbraco-forms-field.richtext a:hover {
