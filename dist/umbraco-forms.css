@@ -60,8 +60,8 @@ form label {
   align-items: center !important;
 }
 
-.checkboxlist,
-.radiobuttonlist {
+.umbraco-forms-form .checkboxlist,
+.umbraco-forms-form .radiobuttonlist {
   padding: 0px !important;
 }
 
@@ -71,9 +71,9 @@ form label {
   width: 100% !important;
 }
 
-.text,
-.datepickerfield,
-select {
+.umbraco-forms-form .text,
+.umbraco-forms-form .datepickerfield,
+.umbraco-forms-form select {
   width: 100% !important;
   max-width: 800px !important;
   height: 2rem !important;
@@ -84,12 +84,12 @@ select {
   border-radius: 5px !important;
 }
 
-select {
+.umbraco-forms-form select {
   max-width: 410px !important;
   height: 2.5rem !important;
 }
 
-textarea {
+.umbraco-forms-form textarea {
   width: 100% !important;
   max-width: 800px !important;
   height: 5rem !important;
@@ -115,11 +115,11 @@ textarea {
   margin-right: 20px !important;
 }
 
-input[type="file"] {
+.umbraco-forms-form input[type="file"] {
   font-size: 1em !important;
 }
 
-input[type="file"]::file-selector-button {
+.umbraco-forms-form input[type="file"]::file-selector-button {
   background-color: var(--customyellow) !important;
   border: none !important;
   padding: 0.5rem 1rem !important;
@@ -242,9 +242,9 @@ input[type="file"]::file-selector-button:focus {
   font-style: italic !important;
 }
 
-.next,
-.prev,
-.btn.primary {
+.umbraco-forms-form .next,
+.umbraco-forms-form .prev,
+.umbraco-forms-form .btn.primary {
   background-color: var(--customyellow) !important;
   border: none !important;
   padding: 0.5rem 2rem !important;
@@ -256,11 +256,11 @@ input[type="file"]::file-selector-button:focus {
   font-size: 1.2em !important;
 }
 
-.next:hover,
-.next:focus,
-.prev:hover,
-.prev:focus,
-.btn.primary:hover,
+.umbraco-forms-form .next:hover,
+.umbraco-forms-form .next:focus,
+.umbraco-forms-form .prev:hover,
+.umbraco-forms-form .prev:focus,
+.umbraco-forms-form .btn.primary:hover,
 .btn.primary:focus {
   background-color: #01216a !important;
   color: white !important;
