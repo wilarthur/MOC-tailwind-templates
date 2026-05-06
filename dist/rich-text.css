@@ -4,6 +4,14 @@
   color: #01216a;
 }
 
+.rich-text.text-white {
+  color: white;
+}
+
+.rich-text.text-white a {
+  color: white;
+}
+
 .rich-text p {
   margin: 20px 0;
 }
