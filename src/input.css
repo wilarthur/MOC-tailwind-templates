@@ -97,6 +97,15 @@ select {
   height: 100%;
 }
 
+/* 1 element */
+.swiper-wrapper:has(> :last-child:nth-child(1)) .swiper-slide-content {
+  padding: 0px;
+}
+/* 2 elements */
+.swiper-wrapper:has(> :last-child:nth-child(2)) .swiper-slide-content {
+  padding: 0px;
+}
+
 .imageSwiper .swiper-slide-content {
   display: flex;
   justify-content: center;
