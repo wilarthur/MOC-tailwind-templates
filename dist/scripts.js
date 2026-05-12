@@ -3,7 +3,18 @@
 function toggleMenu() {
   const mobileMenu = document.getElementById("mobile-menu");
   const htmlTag = document.documentElement;
-  mobileMenu.classList.toggle("translate-x-full");
+
+  if (mobileMenu.classList.contains("left-full")) {
+    mobileMenu.classList.toggle("left-full");
+    mobileMenu.classList.toggle("right-0");
+    mobileMenu.classList.toggle("translate-x-full");
+  } else if (mobileMenu.classList.contains("right-0")) {
+    mobileMenu.classList.toggle("translate-x-full");
+    setTimeout(() => {
+      mobileMenu.classList.toggle("right-0");
+      mobileMenu.classList.toggle("left-full");
+    }, 1000);
+  }
 }
 
 function toggleSearch() {
