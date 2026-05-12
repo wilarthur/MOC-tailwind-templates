@@ -349,6 +349,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
   .\!h-96 {
     height: calc(var(--spacing) * 96) !important;
   }
@@ -409,6 +412,9 @@
   .min-h-36 {
     min-height: calc(var(--spacing) * 36);
   }
+  .min-h-96 {
+    min-height: calc(var(--spacing) * 96);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -435,6 +441,9 @@
   }
   .max-w-96 {
     max-width: calc(var(--spacing) * 96);
+  }
+  .min-w-96 {
+    min-width: calc(var(--spacing) * 96);
   }
   .shrink-0 {
     flex-shrink: 0;
