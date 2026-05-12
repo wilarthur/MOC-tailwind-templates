@@ -214,6 +214,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .left-full {
+    left: 100%;
+  }
   .-z-10 {
     z-index: calc(10 * -1);
   }
