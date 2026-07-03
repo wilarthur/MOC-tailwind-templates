@@ -28,6 +28,14 @@ li {
   font-family: var(--font-body);
 }
 
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--color-moc-orange);
+}
+
 /* Accordions */
 .accordion {
   cursor: pointer;

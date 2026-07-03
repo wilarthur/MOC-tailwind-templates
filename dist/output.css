@@ -412,9 +412,6 @@
   .min-h-36 {
     min-height: calc(var(--spacing) * 36);
   }
-  .min-h-96 {
-    min-height: calc(var(--spacing) * 96);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -441,9 +438,6 @@
   }
   .max-w-96 {
     max-width: calc(var(--spacing) * 96);
-  }
-  .min-w-96 {
-    min-width: calc(var(--spacing) * 96);
   }
   .shrink-0 {
     flex-shrink: 0;
@@ -997,6 +991,12 @@ h1, h2, h3, h4, h5, h6, .accordion {
 }
 p, span, a, li {
   font-family: var(--font-body);
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: var(--color-moc-orange);
 }
 .accordion {
   cursor: pointer;
