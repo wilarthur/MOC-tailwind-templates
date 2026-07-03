@@ -5,15 +5,21 @@ function toggleMenu() {
   const htmlTag = document.documentElement;
 
   if (mobileMenu.classList.contains("left-full")) {
-    mobileMenu.classList.toggle("left-full");
-    mobileMenu.classList.toggle("right-0");
-    mobileMenu.classList.toggle("translate-x-full");
+    mobileMenu.classList.toggle("hidden");
+    setTimeout(() => {
+      mobileMenu.classList.toggle("left-full");
+      mobileMenu.classList.toggle("right-0");
+      mobileMenu.classList.toggle("translate-x-full");
+    }, 10);
   } else if (mobileMenu.classList.contains("right-0")) {
     mobileMenu.classList.toggle("translate-x-full");
     setTimeout(() => {
       mobileMenu.classList.toggle("right-0");
       mobileMenu.classList.toggle("left-full");
     }, 1000);
+    setTimeout(() => {
+      mobileMenu.classList.toggle("hidden");
+    }, 1010);
   }
 }
 
